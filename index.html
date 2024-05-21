@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <form class="payment-form">
+            <div class="card-body">
+                <div class="billing-info">
+                    <h1 class="section-title">Billing Address</h1>
+                    <div class="box">
+                        <label class="label" for="fullName">Full Name :</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Steve M. Doe" class="input" required>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="email">Email :</label>
+                        <input type="email" name="email" id="email" placeholder="steve@example.com" class="input" required>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="address">Address :</label>
+                        <input type="text" name="address" id="address" placeholder="542 W. 15th Street" class="input" required>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="city">City :</label>
+                        <input type="text" name="city" id="city" placeholder="New York" class="input" required>
+                    </div>
+                    <div class="grid">
+                        <div class="box">
+                            <label class="label" for="state">State :</label>
+                            <input type="text" name="state" id="state" placeholder="NY" class="input" required>
+                        </div>
+                        <div class="box">
+                            <label class="label" for="zip">Zip Code :</label>
+                            <input type="text" name="zip" id="zip" placeholder="10001" class="input" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-info">
+                    <h1 class="section-title">Payment</h1>
+                    <div class="box">
+                        <label class="label">Accepted Cards :</label>
+                        <img src="cards.png" class="img-cards" alt="payment-cards">
+                    </div>
+                    <div class="box">
+                        <label class="label" for="cardname">Name on Card :</label>
+                        <input type="text" name="cardname" id="cardname" placeholder="Steve More Doe" class="input" required>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="cardnumber">Card Number :</label>
+                        <input type="text" name="cardnumber" id="cardnumber" placeholder="1111-2222-3333-4444" class="input" required>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="expmonth">Exp. Month :</label>
+                        <input type="text" name="expmonth" id="expmonth" placeholder="September" class="input" required>
+                    </div>
+                    <div class="grid">
+                        <div class="box">
+                            <label class="label" for="expyear">Exp. Year :</label>
+                            <input type="text" name="expyear" id="expyear" placeholder="2029" class="input" required>
+                        </div>
+                        <div class="box">
+                            <label class="label" for="cvv">CVV :</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="879" class="input" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
